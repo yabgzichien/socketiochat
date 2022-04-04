@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>RealTime Chat</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <span><h1>RealTime Chat</h1></span>
+            <form id="main-form" action="chat.html">
+
+                <h3>Chose a profile picture</h3>
+                <div class="form-control">
+                      <input type="radio" id="bot1" name="profilePic" value="bot1" required>
+                      <label for="bot1"><img src="bot3.jpg" class="choseProfile"></label><br>
+                      <input type="radio" id="bot2" name="profilePic" value="bot2">
+                      <label for="bot2"><img src="bot2.png" class="choseProfile"></label><br>
+                      <input type="radio" id="bot3" name="profilePic" value="bot3">
+                      <label for="bot3"><img src="bot4.jpg" class="choseProfile" ></label>
+                </div>
+
+
+                <div class="form-control">
+                    <label for="username"></label>
+                    <input 
+                    type="text" 
+                    placeholder="username" 
+                    class="username-input"
+                    name="username"
+                    id="username"
+                    autocomplete="off"
+                    required
+                    >
+                </div>
+                <div class="form-control">
+                    <label for="roomid"></label>
+                    <input 
+                    type="text" 
+                    placeholder="Room ID" 
+                    class="roomid-input"
+                    name="roomid"
+                    id="roomid"
+                    autocomplete="off"
+                    required
+                    >
+                </div>
+                
+                
+                <button type="submit" class="join-btn"> Join Room</button>
+            </form>
+
+        </div>
+    </div>
+
+
+</body>
+</html>

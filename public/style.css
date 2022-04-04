@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+:root{
+    --mainColor: rgb(212, 212, 212);
+    --borderColor: white;
+    --defaultFont: 24px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+.form-control{
+    display: flex;
+}
+.choseProfile{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+h1{
+    display: inline-block;
+    border-bottom: 3px solid var(--borderColor) ;
+    margin: 10px 0;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    background-color: var(--mainColor);
+    width: 100%;
+    height: 100vh;
+}
+
+
+.username-input{
+    padding: 5px;
+    font-size: var(--defaultFont);
+    border-radius: 5px;
+    display: block;
+    margin: 10px 0;
+}
+
+.roomid-input{
+    padding: 5px;
+    font-size: var(--defaultFont);
+    border-radius: 5px;
+    display: block;
+    margin: 10px 0;
+}
+
+.join-btn{
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+/* Chat html */
+
+.main-container2{
+    display: flex;
+    background-color: var(--mainColor);
+    width: 100%;
+    height: 100vh;
+}
+
+.left-navbar{
+    width: 380px;
+    height: 100vh;
+    background-color: grey;
+}
+
+.empty-left{
+    background-color: grey;
+    width: 100%;
+    height: 100px;
+}
+
+
+.chat{
+    width: 80vw;
+    height: 85vh;
+    background-color: rgb(86, 112, 134);
+    overflow: scroll;
+}
+
+.send-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    background-color: rgb(86, 112, 134);
+    height: 15vh;
+}
+
+#chatMsg{
+    width: 90%;
+    font-size: 30px;
+    border-radius: 5px;
+    background-color: rgb(27, 35, 41);
+    padding: 5px;
+    margin-left:20px ;
+    color: white;
+}
+
+.fas{
+    background-color: rgb(0, 217, 255);  
+    font-size: 30px ;  
+    padding: 4px 20px;
+    cursor: pointer;
+}
+
+.fas:active, .fas:hover{
+    background-color: rgb(63, 63, 167);
+    color: white;
+}
+
+button{
+    display: inline;
+}
+
+.contentContainer{
+    margin-left: 20px ;
+}
+
+.bg-color-container{
+    background-color: white;
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+.bg-color-container> div{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.bg-color-container> div > h1{
+    border-bottom: 3px solid black;
+}
+
+.messageContainer{
+    display: flex;
+    background-color: rgb(77, 141, 197);
+    margin-top: 20px;
+}
+
+.message{
+    background-color: rgb(77, 141, 197);
+    width: 100%;
+}
+
+.profilePic{
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-right: 30px;
+}
+
+.chat-messages{
+    margin-top: 10px;
+}
+
+.top-nav{
+    background-color: rgb(86, 112, 134);
+    width: 100%;
+    height: 10px;
+    margin-bottom: 20px;
+}
+
+.leave{
+    background-color: red;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    margin-left: 30px;
+}
